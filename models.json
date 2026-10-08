@@ -28,6 +28,58 @@
       ]
     },
     {
+      "file": "nlmf_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "434aa032d34804d4de386d2e6aeee6a0cb1b37a2e244c5819e6163238141b9d3",
+      "url": "https://huggingface.co/sheldonxxxx/RapidRAW-Nonlocal-Denoise/resolve/af6bf36ca55591d103e465200efc4f13b7112a7b/coreml/packed.mlpackage/Manifest.json",
+      "used_by": "AI Denoise (raw Bayer mosaic)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, checkpoint rawnoise_25_15_9nbr), Core ML and ONNX conversions by sheldonxxxx/RapidRAW-Nonlocal-Denoise (revision af6bf36), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
+      "file": "nlmf_coreml_model.mlmodel",
+      "size": 167538,
+      "sha256": "92f31612c9f526395f7c6cad010d157e94663e77394c16fff755126fb176aa9b",
+      "url": "https://huggingface.co/sheldonxxxx/RapidRAW-Nonlocal-Denoise/resolve/af6bf36ca55591d103e465200efc4f13b7112a7b/coreml/packed.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+      "used_by": "AI Denoise (raw Bayer mosaic)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, checkpoint rawnoise_25_15_9nbr), Core ML and ONNX conversions by sheldonxxxx/RapidRAW-Nonlocal-Denoise (revision af6bf36), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
+      "file": "nlmf_coreml_weight.bin",
+      "size": 85158912,
+      "sha256": "a5bf7b0b9d7efc24b3141f09b8c6fc7cadd61f46eea874a41326de8216a500a0",
+      "url": "https://huggingface.co/sheldonxxxx/RapidRAW-Nonlocal-Denoise/resolve/af6bf36ca55591d103e465200efc4f13b7112a7b/coreml/packed.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+      "used_by": "AI Denoise (raw Bayer mosaic)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, checkpoint rawnoise_25_15_9nbr), Core ML and ONNX conversions by sheldonxxxx/RapidRAW-Nonlocal-Denoise (revision af6bf36), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
+      "file": "nlmf.onnx",
+      "size": 86325002,
+      "sha256": "ba788a97f247058ea03d14bbf2f289adc8f4666039f27d0d530e6f67d23dd73c",
+      "url": "https://huggingface.co/sheldonxxxx/RapidRAW-Nonlocal-Denoise/resolve/af6bf36ca55591d103e465200efc4f13b7112a7b/onnx/model.onnx",
+      "used_by": "AI Denoise (raw Bayer mosaic)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, checkpoint rawnoise_25_15_9nbr), Core ML and ONNX conversions by sheldonxxxx/RapidRAW-Nonlocal-Denoise (revision af6bf36), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
       "file": "sam_vit_b_01ec64_encoder.onnx",
       "size": 100662710,
       "sha256": "f29e2ba1b2cd017a7975e2b1145373e3f7345954ee18cefdeb6a24a3a8f2d4ec",

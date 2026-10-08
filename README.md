@@ -17,6 +17,7 @@ of every download.
 | `u2net.onnx` | Foreground mask | U²-Net (Qin et al.), rembg's ONNX export, unchanged | Apache-2.0 (weights), MIT (export) |
 | `depth_anything_v2_vits.onnx` | Depth mask | Depth Anything V2 **Small**, fabio-sim's ONNX export, unchanged | Apache-2.0 |
 | `siglip2_vision.onnx`, `siglip2_tags.bin` (and `siglip2_text.onnx`, `siglip2_tokenizer.json` for own tags) | Automatic tags | Exported from Google's SigLIP 2 B/16 (`google/siglip2-base-patch16-224`, revision 75de2d5); `siglip2_tags.bin` holds the text embeddings of Rawtonic's built-in tag list | Apache-2.0 |
+| `nlmf_coreml_*` (Core ML package, three files), `nlmf.onnx` | AI Denoise | Nonlocal MatchFilter (Sanchez-Beeckman and Buades), Core ML and ONNX conversions by sheldonxxxx/RapidRAW-Nonlocal-Denoise (revision af6bf36), unchanged | MIT |
 | `libonnxruntime-*.so/.dylib`, `onnxruntime-*.dll` | Runtime | Microsoft ONNX Runtime 1.22.0 release archives, unchanged | MIT + third-party notices |
 
 License texts are in `licenses/`. Training-data terms of the original models
