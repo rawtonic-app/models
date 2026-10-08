@@ -52,6 +52,50 @@
       "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912"
     },
     {
+      "file": "siglip2_vision.onnx",
+      "size": 371783722,
+      "sha256": "d6e4f91fd3779a524d912eef6113ccc816e2c01044e2e27cc166493b0e730fe8",
+      "used_by": "Automatic tags (image encoder)",
+      "source": "SigLIP 2 B/16 (google/siglip2-base-patch16-224, revision 75de2d5), exported by scripts/models/export_siglip2.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "siglip2-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "siglip2_text.onnx",
+      "size": 1129426366,
+      "sha256": "1ee7842ea9a96bf8e19951d237db8ee00ca482bf1745027967be976420acc557",
+      "used_by": "Automatic tags (text encoder, only for the user's own tags)",
+      "source": "SigLIP 2 B/16 (google/siglip2-base-patch16-224, revision 75de2d5), exported by scripts/models/export_siglip2.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "siglip2-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "siglip2_tokenizer.json",
+      "size": 34363136,
+      "sha256": "1de36bea24b2b16b25cc27a4b5ea9c86e2e2ecc3c018cb7d5338f0030d84e4bb",
+      "used_by": "Automatic tags (tokenizer, only for the user's own tags)",
+      "source": "SigLIP 2 B/16 (google/siglip2-base-patch16-224, revision 75de2d5), exported by scripts/models/export_siglip2.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "siglip2-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "siglip2_tags.bin",
+      "size": 1809408,
+      "sha256": "625a8fd388c3cc762ce20818df1cacf478b6d6747a0c3664c9fe13776479c449",
+      "used_by": "Automatic tags (text embeddings of the built-in tag list)",
+      "source": "SigLIP 2 B/16 (google/siglip2-base-patch16-224, revision 75de2d5), exported by scripts/models/export_siglip2.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "siglip2-Apache-2.0.txt"
+      ]
+    },
+    {
       "file": "libonnxruntime-macos-aarch64.dylib",
       "size": 33481272,
       "sha256": "2b885992d3d6fa4130d39ec84a80d7504ff52750027c547bb22c86165f19406a",
