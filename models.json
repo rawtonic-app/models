@@ -224,6 +224,29 @@
         "onnxruntime-MIT.txt",
         "onnxruntime-ThirdPartyNotices.txt"
       ]
+    },
+    {
+      "file": "migan_pipeline_v2.onnx",
+      "size": 28079181,
+      "sha256": "6f1f3530a1a2324b19752018ce756088b07973cda8d7d890034ace5c8a48c40b",
+      "url": "https://huggingface.co/andraniksargsyan/migan/resolve/406830d0fa60666da0071c342ad2fbc8f30c5c64/migan_pipeline_v2.onnx",
+      "used_by": "Object removal (inpainting)",
+      "source": "MI-GAN 512 Places2 (Picsart AI Research, github.com/Picsart-AI-Research/MI-GAN), ONNX pipeline by its first author (huggingface.co/andraniksargsyan/migan, revision 406830d), unchanged",
+      "license": "MIT (weights, LICENSE-WEIGHTS)",
+      "license_files": [
+        "MI-GAN-weights-MIT.txt"
+      ]
+    },
+    {
+      "file": "skyseg_upernet_convnext_t.onnx",
+      "size": 118847964,
+      "sha256": "e5dc2a0bee8b4cdfbd866d8f811b4390d04ba621644d99de25478338a5b15bbf",
+      "used_by": "Sky mask",
+      "source": "UperNet + ConvNeXt-T on ADE20K (Meta, facebookresearch/ConvNeXt; transformers conversion openmmlab/upernet-convnext-tiny, revision 876ffc5), exported by scripts/models/export_sky.py",
+      "license": "MIT",
+      "license_files": [
+        "ConvNeXt-MIT.txt"
+      ]
     }
   ]
 }
