@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "file": "u2net.onnx",
+      "size": 175997641,
+      "sha256": "8d10d2f3bb75ae3b6d527c77944fc5e7dcd94b29809d47a739a7a728a912b491",
+      "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx",
+      "used_by": "Foreground mask",
+      "source": "U^2-Net (Qin et al., github.com/xuebinqin/U-2-Net), ONNX export by rembg",
+      "license": "Apache-2.0 (weights), MIT (rembg export)",
+      "license_files": [
+        "U-2-Net-Apache-2.0.txt",
+        "rembg-MIT.txt"
+      ]
+    },
+    {
+      "file": "depth_anything_v2_vits.onnx",
+      "size": 99373606,
+      "sha256": "d2b11a11c1d4a12b47608fa65a17ee9a4c605b55ee1730c8e3b526304f2562be",
+      "url": "https://github.com/fabio-sim/Depth-Anything-ONNX/releases/download/v2.0.0/depth_anything_v2_vits.onnx",
+      "used_by": "Depth mask",
+      "source": "Depth Anything V2 Small (github.com/DepthAnything/Depth-Anything-V2), ONNX export by fabio-sim",
+      "license": "Apache-2.0 (Small only; Base/Large/Giant are CC BY-NC 4.0)",
+      "license_files": [
+        "Depth-Anything-V2-Apache-2.0.txt",
+        "Depth-Anything-ONNX-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "sam_vit_b_01ec64_encoder.onnx",
+      "size": 100662710,
+      "sha256": "f29e2ba1b2cd017a7975e2b1145373e3f7345954ee18cefdeb6a24a3a8f2d4ec",
+      "used_by": "Subject mask (point/box prompts)",
+      "source": "Segment Anything ViT-B checkpoint sam_vit_b_01ec64.pth (Meta), exported by scripts/models/export_sam.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "segment-anything-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912"
+    },
+    {
+      "file": "sam_vit_b_01ec64_decoder.onnx",
+      "size": 4805581,
+      "sha256": "142e8afbd46fe4aa615095d3d86f85b430546459545d4f06043f2134db24b66f",
+      "used_by": "Subject mask (point/box prompts)",
+      "source": "Segment Anything ViT-B checkpoint sam_vit_b_01ec64.pth (Meta), exported by scripts/models/export_sam.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "segment-anything-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912"
+    },
+    {
+      "file": "libonnxruntime-macos-aarch64.dylib",
+      "size": 33481272,
+      "sha256": "2b885992d3d6fa4130d39ec84a80d7504ff52750027c547bb22c86165f19406a",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-osx-arm64-1.22.0.tgz",
+      "used_by": "Runtime for all models (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.22.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "libonnxruntime-macos-x86_64.dylib",
+      "size": 37411816,
+      "sha256": "283e595e61cf65df7a6b1d59a1616cbd35c8b6399dd90d799d99b71a3ff83160",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-osx-x86_64-1.22.0.tgz",
+      "used_by": "Runtime for all models (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.22.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "libonnxruntime-linux-x86_64.so",
+      "size": 21042416,
+      "sha256": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-x64-1.22.0.tgz",
+      "used_by": "Runtime for all models (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.22.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "libonnxruntime-linux-aarch64.so",
+      "size": 17643256,
+      "sha256": "0afd69a0ae38c5099fd0e8604dda398ac43dee67cd9c6394b5142b19e82528de",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-aarch64-1.22.0.tgz",
+      "used_by": "Runtime for all models (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.22.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "onnxruntime-windows-x86_64.dll",
+      "size": 12418080,
+      "sha256": "579b636403983254346a5c1d80bd28f1519cd1e284cd204f8d4ff41f8d711559",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-win-x64-1.22.0.zip",
+      "used_by": "Runtime for all models (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.22.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "onnxruntime-windows-aarch64.dll",
+      "size": 12679728,
+      "sha256": "79281671a386ed1baab9dbdbb09fe55f99577011472e9526cf9d0b468bb6bcc7",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-win-arm64-1.22.0.zip",
+      "used_by": "Runtime for all models (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.22.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    }
+  ]
+}
