@@ -6,7 +6,7 @@
       "size": 175997641,
       "sha256": "8d10d2f3bb75ae3b6d527c77944fc5e7dcd94b29809d47a739a7a728a912b491",
       "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx",
-      "used_by": "Foreground mask",
+      "used_by": "Foreground mask (builds before 2026-10-09)",
       "source": "U^2-Net (Qin et al., github.com/xuebinqin/U-2-Net), ONNX export by rembg",
       "license": "Apache-2.0 (weights), MIT (rembg export)",
       "license_files": [
@@ -83,7 +83,7 @@
       "file": "sam_vit_b_01ec64_encoder.onnx",
       "size": 100662710,
       "sha256": "f29e2ba1b2cd017a7975e2b1145373e3f7345954ee18cefdeb6a24a3a8f2d4ec",
-      "used_by": "Subject mask (point/box prompts)",
+      "used_by": "Subject mask (point/box prompts; builds before 2026-10-09)",
       "source": "Segment Anything ViT-B checkpoint sam_vit_b_01ec64.pth (Meta), exported by scripts/models/export_sam.py",
       "license": "Apache-2.0",
       "license_files": [
@@ -95,7 +95,7 @@
       "file": "sam_vit_b_01ec64_decoder.onnx",
       "size": 4805581,
       "sha256": "142e8afbd46fe4aa615095d3d86f85b430546459545d4f06043f2134db24b66f",
-      "used_by": "Subject mask (point/box prompts)",
+      "used_by": "Subject mask (point/box prompts; builds before 2026-10-09)",
       "source": "Segment Anything ViT-B checkpoint sam_vit_b_01ec64.pth (Meta), exported by scripts/models/export_sam.py",
       "license": "Apache-2.0",
       "license_files": [
@@ -247,6 +247,41 @@
       "license_files": [
         "ConvNeXt-MIT.txt"
       ]
+    },
+    {
+      "file": "birefnet_subject.onnx",
+      "size": 469865833,
+      "sha256": "1019aa4d150a10830d95d05b0e0e08ed2703c39d3e168dea3333bb0272c16cbf",
+      "used_by": "Subject and background masks",
+      "source": "BiRefNet general checkpoint (Peng Zheng et al., github.com/ZhengPeng7/BiRefNet; huggingface.co/ZhengPeng7/BiRefNet, revision e2bf8e4), exported by scripts/models/export_birefnet.py",
+      "license": "MIT",
+      "license_files": [
+        "BiRefNet-MIT.txt"
+      ]
+    },
+    {
+      "file": "sam2.1_tiny_encoder.onnx",
+      "size": 55056983,
+      "sha256": "b6249b5dfb882d3eaf447d57273340005cd6efd9645c0004f86ab197a7170226",
+      "used_by": "Click and box masks (point/box prompts)",
+      "source": "SAM 2.1 Hiera-T checkpoint sam2.1_hiera_tiny.pt (Meta, github.com/facebookresearch/sam2 at 2b90b9f), exported by scripts/models/export_sam2.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "sam2-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+    },
+    {
+      "file": "sam2.1_tiny_decoder.onnx",
+      "size": 8481499,
+      "sha256": "998c1cc053a2aad703fd2519fe890a1f80115b238a0da6d7b5fba70b210131d7",
+      "used_by": "Click and box masks (point/box prompts)",
+      "source": "SAM 2.1 Hiera-T checkpoint sam2.1_hiera_tiny.pt (Meta, github.com/facebookresearch/sam2 at 2b90b9f), exported by scripts/models/export_sam2.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "sam2-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
     }
   ]
 }

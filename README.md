@@ -13,7 +13,9 @@ of every download.
 
 | File | Used for | Source | License |
 |---|---|---|---|
-| `sam_vit_b_01ec64_encoder.onnx`, `sam_vit_b_01ec64_decoder.onnx` | Subject mask | Exported from Meta's Segment Anything ViT-B checkpoint (`sam_vit_b_01ec64.pth`), per-channel uint8 weights | Apache-2.0 |
+| `sam2.1_tiny_encoder.onnx`, `sam2.1_tiny_decoder.onnx` | Click and box masks | Exported from Meta's SAM 2.1 Hiera-T checkpoint (`sam2.1_hiera_tiny.pt`, facebookresearch/sam2 at 2b90b9f) by `scripts/models/export_sam2.py`, fp16 storage | Apache-2.0 |
+| `birefnet_subject.onnx` | Subject and background masks | BiRefNet general checkpoint (Peng Zheng et al., `ZhengPeng7/BiRefNet`, revision e2bf8e4), exported by `scripts/models/export_birefnet.py`, fp16 storage | MIT |
+| `sam_vit_b_01ec64_encoder.onnx`, `sam_vit_b_01ec64_decoder.onnx` | Click and box masks (builds before 2026-10-09) | Exported from Meta's Segment Anything ViT-B checkpoint (`sam_vit_b_01ec64.pth`), per-channel uint8 weights | Apache-2.0 |
 | `u2net.onnx` | Foreground mask | U²-Net (Qin et al.), rembg's ONNX export, unchanged | Apache-2.0 (weights), MIT (export) |
 | `depth_anything_v2_vits.onnx` | Depth mask | Depth Anything V2 **Small**, fabio-sim's ONNX export, unchanged | Apache-2.0 |
 | `siglip2_vision.onnx`, `siglip2_tags.bin` (and `siglip2_text.onnx`, `siglip2_tokenizer.json` for own tags) | Automatic tags | Exported from Google's SigLIP 2 B/16 (`google/siglip2-base-patch16-224`, revision 75de2d5); `siglip2_tags.bin` holds the text embeddings of Rawtonic's built-in tag list | Apache-2.0 |
@@ -23,5 +25,5 @@ of every download.
 | `libonnxruntime-*.so/.dylib`, `onnxruntime-*.dll` | Runtime | Microsoft ONNX Runtime 1.22.0 release archives, unchanged | MIT + third-party notices |
 
 License texts are in `licenses/`. Training-data terms of the original models
-(for example SA-1B for Segment Anything, Places2 for MI-GAN, ADE20K for the sky model) are their authors' and are listed in
+(for example SA-1B for Segment Anything and SAM 2, DIS5K for BiRefNet, Places2 for MI-GAN, ADE20K for the sky model) are their authors' and are listed in
 Rawtonic's `docs/MODELS.md`.
