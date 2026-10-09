@@ -282,6 +282,40 @@
         "sam2-Apache-2.0.txt"
       ],
       "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+    },
+    {
+      "file": "face_detection_yunet_2023mar.onnx",
+      "size": 232589,
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+      "used_by": "People masks (face detection)",
+      "source": "YuNet 2023mar (Wu, Peng and Yu; github.com/opencv/opencv_zoo, models/face_detection_yunet at f12e127), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "YuNet-MIT.txt"
+      ],
+      "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/f12e12798e8314f7c074a6656816c048dcc95b7a/models/face_detection_yunet/face_detection_yunet_2023mar.onnx"
+    },
+    {
+      "file": "face_mesh_v2.onnx",
+      "size": 4819408,
+      "sha256": "5e82081f46411caa2b8a6734bd977c0120293f0debe29cf76cbc0c5703d48be3",
+      "used_by": "People masks (478 face landmarks: eyes, brows, lips, teeth)",
+      "source": "MediaPipe (Google; storage.googleapis.com/mediapipe-models, version 1), converted by scripts/models/export_faces.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "mediapipe-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "selfie_multiclass_256.onnx",
+      "size": 16302385,
+      "sha256": "c949f945f549e3f865a19b67753694b928e061e40217ac38c0ad39daa8c4b194",
+      "used_by": "People masks (hair, face and body skin, clothes)",
+      "source": "MediaPipe (Google; storage.googleapis.com/mediapipe-models, version 1), converted by scripts/models/export_faces.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "mediapipe-Apache-2.0.txt"
+      ]
     }
   ]
 }
