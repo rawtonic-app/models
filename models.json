@@ -316,6 +316,39 @@
       "license_files": [
         "mediapipe-Apache-2.0.txt"
       ]
+    },
+    {
+      "file": "birefnet_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Subject and background masks (Core ML, macOS)",
+      "source": "BiRefNet general checkpoint (Peng Zheng et al., github.com/ZhengPeng7/BiRefNet; huggingface.co/ZhengPeng7/BiRefNet, revision e2bf8e4), exported by scripts/models/convert_birefnet_coreml.py (Core ML, fp32)",
+      "license": "MIT",
+      "license_files": [
+        "BiRefNet-MIT.txt"
+      ]
+    },
+    {
+      "file": "birefnet_coreml_model.mlmodel",
+      "size": 2751419,
+      "sha256": "7cce117ae197140e5c2487d34ee1d0863745e845ddbbbb44decb34293ce18769",
+      "used_by": "Subject and background masks (Core ML, macOS)",
+      "source": "BiRefNet general checkpoint (Peng Zheng et al., github.com/ZhengPeng7/BiRefNet; huggingface.co/ZhengPeng7/BiRefNet, revision e2bf8e4), exported by scripts/models/convert_birefnet_coreml.py (Core ML, fp32)",
+      "license": "MIT",
+      "license_files": [
+        "BiRefNet-MIT.txt"
+      ]
+    },
+    {
+      "file": "birefnet_coreml_weight.bin",
+      "size": 927168832,
+      "sha256": "24a474c23a5a69aba66652aee5b01241742c8740eef4443f1b5bbf83c8a9f8d4",
+      "used_by": "Subject and background masks (Core ML, macOS)",
+      "source": "BiRefNet general checkpoint (Peng Zheng et al., github.com/ZhengPeng7/BiRefNet; huggingface.co/ZhengPeng7/BiRefNet, revision e2bf8e4), exported by scripts/models/convert_birefnet_coreml.py (Core ML, fp32)",
+      "license": "MIT",
+      "license_files": [
+        "BiRefNet-MIT.txt"
+      ]
     }
   ]
 }
