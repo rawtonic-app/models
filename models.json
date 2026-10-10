@@ -349,6 +349,136 @@
       "license_files": [
         "BiRefNet-MIT.txt"
       ]
+    },
+    {
+      "file": "libonnxruntime-1.30.0-linux-x86_64.so",
+      "size": 28985152,
+      "sha256": "245a6f8c38127551057a1cd1ffd59f0a186a227ade4f3492dea2494eb565542e",
+      "used_by": "Runtime for all models on Windows and Linux (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.30.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-linux-x64-1.30.0.tgz"
+    },
+    {
+      "file": "libonnxruntime-1.30.0-linux-aarch64.so",
+      "size": 25135496,
+      "sha256": "64e903a43a041240fd6bcffe0ac6d4fea47ef87bf24b9d097801bd00a9612a4b",
+      "used_by": "Runtime for all models on Windows and Linux (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.30.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-linux-aarch64-1.30.0.tgz"
+    },
+    {
+      "file": "onnxruntime-1.30.0-windows-x86_64.dll",
+      "size": 16462648,
+      "sha256": "7e39e2bdbba836d98071ef28620735ba36a47c554cf794585269aecc50fab0da",
+      "used_by": "Runtime for all models on Windows and Linux (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.30.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-win-x64-1.30.0.zip"
+    },
+    {
+      "file": "onnxruntime-1.30.0-windows-aarch64.dll",
+      "size": 16728888,
+      "sha256": "46b7ec24a6ee2932bb315edb39d26d6b2d51eef21f02c8e1ceafe801fe991a89",
+      "used_by": "Runtime for all models on Windows and Linux (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.30.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-win-arm64-1.30.0.zip"
+    },
+    {
+      "file": "libonnxruntime_providers_webgpu-0.4.0-linux-x86_64.so",
+      "size": 16450888,
+      "sha256": "9f76e3dc4459421958ad086a9da03bf7e5de9289e9a3a56e28bbb459773dec81",
+      "used_by": "GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan), bundled beside the runtime",
+      "source": "ONNX Runtime WebGPU plugin execution provider 0.4.0 (Microsoft; PyPI onnxruntime-ep-webgpu, built from ONNX Runtime 1.30.0), library unchanged",
+      "license": "MIT (includes Dawn, BSD-3-Clause; notices as ONNX Runtime 1.30.0)",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://files.pythonhosted.org/packages/c1/96/2a18a45079250afcd825687aef2895de266d5abc1cff9f52d2dede7598f2/onnxruntime_ep_webgpu-0.4.0-py3-none-manylinux_2_28_x86_64.whl"
+    },
+    {
+      "file": "libonnxruntime_providers_webgpu-0.4.0-linux-aarch64.so",
+      "size": 13862448,
+      "sha256": "720e1288e7e465f924db44b88a98a9d1c543eba3fbb2ff801cf2545f5e7f0279",
+      "used_by": "GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan), bundled beside the runtime",
+      "source": "ONNX Runtime WebGPU plugin execution provider 0.4.0 (Microsoft; PyPI onnxruntime-ep-webgpu, built from ONNX Runtime 1.30.0), library unchanged",
+      "license": "MIT (includes Dawn, BSD-3-Clause; notices as ONNX Runtime 1.30.0)",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://files.pythonhosted.org/packages/4e/ca/00c70322c19913c81a6bb2239aca83781b97a818b55c2ec3d25cec72dc4c/onnxruntime_ep_webgpu-0.4.0-py3-none-manylinux_2_28_aarch64.whl"
+    },
+    {
+      "file": "onnxruntime_providers_webgpu-0.4.0-windows-x86_64.dll",
+      "size": 10954080,
+      "sha256": "85d7b2065b1968b846cd00d5d87d5286d3c44e8f6c557cd382d96300e524b6cb",
+      "used_by": "GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan), bundled beside the runtime",
+      "source": "ONNX Runtime WebGPU plugin execution provider 0.4.0 (Microsoft; PyPI onnxruntime-ep-webgpu, built from ONNX Runtime 1.30.0), library unchanged",
+      "license": "MIT (includes Dawn, BSD-3-Clause; notices as ONNX Runtime 1.30.0)",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://files.pythonhosted.org/packages/d7/a4/c98a9e9433b3eeb576977b26c5c1cd0364f15ba9d198bb16101e7563ab06/onnxruntime_ep_webgpu-0.4.0-py3-none-win_amd64.whl"
+    },
+    {
+      "file": "onnxruntime_providers_webgpu-0.4.0-windows-aarch64.dll",
+      "size": 11279672,
+      "sha256": "e2a72894617c0519cae3080534ca1fc957c4ab607a993c05f326d83b322a581d",
+      "used_by": "GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan), bundled beside the runtime",
+      "source": "ONNX Runtime WebGPU plugin execution provider 0.4.0 (Microsoft; PyPI onnxruntime-ep-webgpu, built from ONNX Runtime 1.30.0), library unchanged",
+      "license": "MIT (includes Dawn, BSD-3-Clause; notices as ONNX Runtime 1.30.0)",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://files.pythonhosted.org/packages/cd/35/e1b1b12e596354d05af43cea09cd9fbd8a24b6df3853c527307b5cfb8d4b/onnxruntime_ep_webgpu-0.4.0-py3-none-win_arm64.whl"
+    },
+    {
+      "file": "libonnxruntime_providers_cuda-0.2.0-cuda13-linux-x86_64.so",
+      "size": 300280288,
+      "sha256": "279d14b03d7ed7856d273326d4cde90489c51d41da2c88dc4eb2dda1ea946422",
+      "used_by": "NVIDIA GPUs for the AI models (optional; install_models.sh --cuda), with the user's CUDA 13 and cuDNN 9",
+      "source": "ONNX Runtime CUDA plugin execution provider 0.2.0 (Microsoft, github.com/microsoft/onnxruntime release plugin-ep-cuda/v0.2.0), unchanged",
+      "license": "MIT (CUDA and cuDNN are not included)",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/plugin-ep-cuda%2Fv0.2.0/cuda_ep_cuda13_0.2.0_linux-x64.tar.gz"
+    },
+    {
+      "file": "onnxruntime_providers_cuda-0.2.0-cuda13-windows-x86_64.dll",
+      "size": 190399328,
+      "sha256": "ecbd0f4a75c172a63b93bf93cb4484b24aa7d488c99b957f55b86a77f195225f",
+      "used_by": "NVIDIA GPUs for the AI models (optional; install_models.sh --cuda), with the user's CUDA 13 and cuDNN 9",
+      "source": "ONNX Runtime CUDA plugin execution provider 0.2.0 (Microsoft, github.com/microsoft/onnxruntime release plugin-ep-cuda/v0.2.0), unchanged",
+      "license": "MIT (CUDA and cuDNN are not included)",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ],
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/plugin-ep-cuda%2Fv0.2.0/cuda_ep_cuda13_0.2.0_win-x64.zip"
     }
   ]
 }

@@ -26,6 +26,9 @@ of every download.
 | `face_detection_yunet_2023mar.onnx` | People masks (faces) | YuNet 2023mar (Shiqi Yu et al.), OpenCV Zoo at f12e127, unchanged | MIT |
 | `face_mesh_v2.onnx`, `selfie_multiclass_256.onnx` | People masks (landmarks; skin, hair, clothes) | MediaPipe Face Mesh V2 and multiclass selfie segmentation (Google, version 1), converted to ONNX by `scripts/models/export_faces.py` | Apache-2.0 |
 | `libonnxruntime-*.so/.dylib`, `onnxruntime-*.dll` | Runtime | Microsoft ONNX Runtime 1.22.0 release archives, unchanged | MIT + third-party notices |
+| `libonnxruntime-1.30.0-*.so`, `onnxruntime-1.30.0-*.dll` | Runtime on Windows and Linux (GPU plugins need ≥ 1.24.4) | Microsoft ONNX Runtime 1.30.0 release archives, unchanged | MIT + third-party notices |
+| `*onnxruntime_providers_webgpu-0.4.0-*` | GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan) | Microsoft's WebGPU plugin execution provider 0.4.0 (PyPI onnxruntime-ep-webgpu), library unchanged; the DirectX Shader Compiler DLLs are not included | MIT (includes Dawn, BSD-3-Clause) |
+| `*onnxruntime_providers_cuda-0.2.0-cuda13-*` | NVIDIA GPUs, optional (`install_models.sh --cuda`), with the user's own CUDA 13 and cuDNN 9 | Microsoft's CUDA plugin execution provider 0.2.0, unchanged; CUDA/cuDNN not included | MIT |
 
 License texts are in `licenses/`. Training-data terms of the original models
 (for example SA-1B for Segment Anything and SAM 2, DIS5K for BiRefNet, Places2 for MI-GAN, ADE20K for the sky model, WIDER FACE for YuNet) are their authors' and are listed in
