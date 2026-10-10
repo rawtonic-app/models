@@ -479,6 +479,39 @@
         "onnxruntime-1.30.0-ThirdPartyNotices.txt"
       ],
       "url": "https://github.com/microsoft/onnxruntime/releases/download/plugin-ep-cuda%2Fv0.2.0/cuda_ep_cuda13_0.2.0_win-x64.zip"
+    },
+    {
+      "file": "skyseg_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Sky mask (Core ML, macOS)",
+      "source": "UperNet + ConvNeXt-T on ADE20K (Meta, facebookresearch/ConvNeXt; transformers conversion openmmlab/upernet-convnext-tiny, revision 876ffc5), exported by scripts/models/convert_sky_coreml.py (Core ML, fp32)",
+      "license": "MIT",
+      "license_files": [
+        "ConvNeXt-MIT.txt"
+      ]
+    },
+    {
+      "file": "skyseg_coreml_model.mlmodel",
+      "size": 137686,
+      "sha256": "514793240a846abdee20271682172fc7da03c4642e5d9fff37f3edd18502aec5",
+      "used_by": "Sky mask (Core ML, macOS)",
+      "source": "UperNet + ConvNeXt-T on ADE20K (Meta, facebookresearch/ConvNeXt; transformers conversion openmmlab/upernet-convnext-tiny, revision 876ffc5), exported by scripts/models/convert_sky_coreml.py (Core ML, fp32)",
+      "license": "MIT",
+      "license_files": [
+        "ConvNeXt-MIT.txt"
+      ]
+    },
+    {
+      "file": "skyseg_coreml_weight.bin",
+      "size": 237266496,
+      "sha256": "33bf57800ebd7ccd2005133e997dd064c8b59d0e7c8cac99d8a69728642206f3",
+      "used_by": "Sky mask (Core ML, macOS)",
+      "source": "UperNet + ConvNeXt-T on ADE20K (Meta, facebookresearch/ConvNeXt; transformers conversion openmmlab/upernet-convnext-tiny, revision 876ffc5), exported by scripts/models/convert_sky_coreml.py (Core ML, fp32)",
+      "license": "MIT",
+      "license_files": [
+        "ConvNeXt-MIT.txt"
+      ]
     }
   ]
 }
