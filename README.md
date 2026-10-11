@@ -15,7 +15,8 @@ of every download.
 |---|---|---|---|
 | `sam2.1_tiny_encoder.onnx`, `sam2.1_tiny_decoder.onnx` | Click and box masks | Exported from Meta's SAM 2.1 Hiera-T checkpoint (`sam2.1_hiera_tiny.pt`, facebookresearch/sam2 at 2b90b9f) by `scripts/models/export_sam2.py`, fp16 storage | Apache-2.0 |
 | `birefnet_subject.onnx` | Subject and background masks | BiRefNet general checkpoint (Peng Zheng et al., `ZhengPeng7/BiRefNet`, revision e2bf8e4), exported by `scripts/models/export_birefnet.py`, fp16 storage | MIT |
-| `birefnet_coreml_*` (Core ML package, three files) | Subject and background masks on macOS | BiRefNet general checkpoint (revision e2bf8e4), converted by `scripts/models/convert_birefnet_coreml.py`, fp32 | MIT |
+| `birefnet_fp16_coreml_*` (Core ML package, three files) | Subject and background masks on macOS (builds from 2026-10-11) | BiRefNet general checkpoint (revision e2bf8e4), converted by `scripts/models/convert_birefnet_coreml.py`, fp16 (equal to fp32 against subject references) | MIT |
+| `birefnet_coreml_*` (Core ML package, three files) | Subject and background masks on macOS (builds before 2026-10-11) | BiRefNet general checkpoint (revision e2bf8e4), converted by `scripts/models/convert_birefnet_coreml.py`, fp32 | MIT |
 | `sam_vit_b_01ec64_encoder.onnx`, `sam_vit_b_01ec64_decoder.onnx` | Click and box masks (builds before 2026-10-09) | Exported from Meta's Segment Anything ViT-B checkpoint (`sam_vit_b_01ec64.pth`), per-channel uint8 weights | Apache-2.0 |
 | `u2net.onnx` | Foreground mask | U²-Net (Qin et al.), rembg's ONNX export, unchanged | Apache-2.0 (weights), MIT (export) |
 | `depth_anything_v2_vits.onnx` | Depth mask | Depth Anything V2 **Small**, fabio-sim's ONNX export, unchanged | Apache-2.0 |
