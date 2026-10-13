@@ -545,6 +545,44 @@
       "license_files": [
         "BiRefNet-MIT.txt"
       ]
+    },
+    {
+      "file": "libonnxruntime-1.23.2-macos-aarch64.dylib",
+      "size": 35138784,
+      "sha256": "d306d2bc768540766c7ed8a1e0ff05d2870c77a934ebeee4a7bafa1b732ef299",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.23.2/onnxruntime-osx-arm64-1.23.2.tgz",
+      "used_by": "macOS ONNX Runtime; fixes shutdown crashes",
+      "source": "ONNX Runtime 1.23.2 release (github.com/microsoft/onnxruntime), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.23.2-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "libonnxruntime-1.23.2-macos-x86_64.dylib",
+      "size": 39742608,
+      "sha256": "8c9c78de65ea3786f987c0d980e9c1b13a3a5fbc6b3e2965ba05b450e6e4c054",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.23.2/onnxruntime-osx-x86_64-1.23.2.tgz",
+      "used_by": "macOS ONNX Runtime; fixes shutdown crashes",
+      "source": "ONNX Runtime 1.23.2 release (github.com/microsoft/onnxruntime), unchanged",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.23.2-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "relight_geometry_da3_base.onnx",
+      "size": 412844389,
+      "sha256": "070a4ff34ed406d057044daf9b84fd6287e5a7cc66134060acf2ccfe5d5dea23",
+      "used_by": "Relight relative scene geometry and camera",
+      "source": "DA3 Base (ByteDance-Seed/Depth-Anything-3 source 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4; depth-anything/DA3-BASE revision f4a6c9b3c95e41c82048423d3493a81ec3fa810e), exported by scripts/models/export_relight.py",
+      "license": "Apache-2.0",
+      "license_files": [
+        "Depth-Anything-3-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "e01067dc1659613083d9145a9a2547ccdbe6ccbbf83c4fe7b3e8a4e2bdae78b5"
     }
   ]
 }
