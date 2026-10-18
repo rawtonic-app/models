@@ -13,7 +13,7 @@ of every download.
 
 A new pack is a new release; earlier releases stay unchanged for the builds
 that point to them. `pack-2026-10-18` holds every file of `pack-2026-10-08`
-(same SHA-256) plus `nlmf_mixed640_coreml_*`.
+(same SHA-256) plus the mixed-precision MatchFilter package.
 
 | File | Used for | Source | License |
 |---|---|---|---|
@@ -28,7 +28,7 @@ that point to them. `pack-2026-10-18` holds every file of `pack-2026-10-08`
 | `depth_anything_v2_vits.onnx` | Depth mask | Depth Anything V2 **Small**, fabio-sim's ONNX export, unchanged | Apache-2.0 |
 | `siglip2_vision.onnx`, `siglip2_tags.bin` (and `siglip2_text.onnx`, `siglip2_tokenizer.json` for own tags) | Automatic tags | Exported from Google's SigLIP 2 B/16 (`google/siglip2-base-patch16-224`, revision 75de2d5); `siglip2_tags.bin` holds the text embeddings of Rawtonic's built-in tag list | Apache-2.0 |
 | `nlmf_coreml_*` (Core ML package, three files), `nlmf.onnx` | AI Denoise | Nonlocal MatchFilter (Sanchez-Beeckman and Buades), Core ML and ONNX conversions by sheldonxxxx/RapidRAW-Nonlocal-Denoise (revision af6bf36), unchanged | MIT |
-| `nlmf_mixed640_coreml_*` (Core ML package, three files) | AI Denoise version 3 on macOS (from pack-2026-10-18) | The same Nonlocal MatchFilter checkpoint (authors' release v1.0.0), converted by `scripts/models/convert_nlmf_coreml.py`: convolutions fp16, matching fp32, 640 px tiles; the bytes repeat in every conversion | MIT |
+| `nlmf_mixed640_macos13_coreml_*` (Core ML package, three files) | AI Denoise version 3 on macOS 13 and later (from pack-2026-10-18) | The same Nonlocal MatchFilter checkpoint (authors' release v1.0.0), converted by `scripts/models/convert_nlmf_coreml.py`: convolutions fp16, matching fp32, 640 px tiles; the bytes repeat in every conversion. `nlmf_mixed640_coreml_*` is an earlier macOS 15 build (same weights), used by no build | MIT |
 | `migan_pipeline_v2.onnx` | Object removal | MI-GAN 512 Places2 (Picsart AI Research), its first author's ONNX pipeline (revision 406830d), unchanged | MIT (weights) |
 | `skyseg_upernet_convnext_t.onnx` | Sky mask | UperNet + ConvNeXt-T on ADE20K (Meta's checkpoint via `openmmlab/upernet-convnext-tiny`, revision 876ffc5), exported by `scripts/models/export_sky.py`, fp16 storage | MIT |
 | `skyseg_coreml_*` (Core ML package, three files) | Sky mask on macOS | UperNet + ConvNeXt-T (revision 876ffc5), converted by `scripts/models/convert_sky_coreml.py`, fp32 | MIT |

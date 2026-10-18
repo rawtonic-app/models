@@ -600,7 +600,7 @@
       "file": "nlmf_mixed640_coreml_Manifest.json",
       "size": 617,
       "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
-      "used_by": "AI Denoise version 3 (raw Bayer mosaic, Core ML, macOS)",
+      "used_by": "None (macOS 15 build of the AI Denoise version 3 package, uploaded first; builds use nlmf_mixed640_macos13_coreml_*, same weights)",
       "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, release v1.0.0 checkpoint rawnoise_25_15_9nbr), converted by convert_nlmf_coreml.py (Core ML, convolutions fp16, matching fp32, 640 px tiles) with RapidRAW's vendored network and static packed sampler (sheldonxxxx/RapidRAW denoise/, commit 2375e17)",
       "license": "MIT",
       "license_files": [
@@ -612,7 +612,7 @@
       "file": "nlmf_mixed640_coreml_model.mlmodel",
       "size": 198815,
       "sha256": "a4da084674a43eb69f33e94e73c9454a993867ee5d5e38ed4afaec8dcda8d4f6",
-      "used_by": "AI Denoise version 3 (raw Bayer mosaic, Core ML, macOS)",
+      "used_by": "None (macOS 15 build of the AI Denoise version 3 package, uploaded first; builds use nlmf_mixed640_macos13_coreml_*, same weights)",
       "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, release v1.0.0 checkpoint rawnoise_25_15_9nbr), converted by convert_nlmf_coreml.py (Core ML, convolutions fp16, matching fp32, 640 px tiles) with RapidRAW's vendored network and static packed sampler (sheldonxxxx/RapidRAW denoise/, commit 2375e17)",
       "license": "MIT",
       "license_files": [
@@ -624,8 +624,44 @@
       "file": "nlmf_mixed640_coreml_weight.bin",
       "size": 127057472,
       "sha256": "e50e91a84be8ca50f58566020eae4dc0bcd165e77c2c999bab418a4c492e3fe9",
-      "used_by": "AI Denoise version 3 (raw Bayer mosaic, Core ML, macOS)",
+      "used_by": "None (macOS 15 build of the AI Denoise version 3 package, uploaded first; builds use nlmf_mixed640_macos13_coreml_*, same weights)",
       "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, release v1.0.0 checkpoint rawnoise_25_15_9nbr), converted by convert_nlmf_coreml.py (Core ML, convolutions fp16, matching fp32, 640 px tiles) with RapidRAW's vendored network and static packed sampler (sheldonxxxx/RapidRAW denoise/, commit 2375e17)",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
+      "file": "nlmf_mixed640_macos13_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "AI Denoise version 3 (raw Bayer mosaic, Core ML, macOS 13 and later)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, release v1.0.0 checkpoint rawnoise_25_15_9nbr), converted by convert_nlmf_coreml.py (Core ML for macOS 13, convolutions fp16, matching fp32, 640 px tiles) with RapidRAW's vendored network and static packed sampler (sheldonxxxx/RapidRAW denoise/, commit 2375e17)",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
+      "file": "nlmf_mixed640_macos13_coreml_model.mlmodel",
+      "size": 199085,
+      "sha256": "e466563ad1dba0ee8d143b43c930dee9852b77e2cbb492f7b89cde991044c164",
+      "used_by": "AI Denoise version 3 (raw Bayer mosaic, Core ML, macOS 13 and later)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, release v1.0.0 checkpoint rawnoise_25_15_9nbr), converted by convert_nlmf_coreml.py (Core ML for macOS 13, convolutions fp16, matching fp32, 640 px tiles) with RapidRAW's vendored network and static packed sampler (sheldonxxxx/RapidRAW denoise/, commit 2375e17)",
+      "license": "MIT",
+      "license_files": [
+        "nonlocal-matchfilter-MIT.txt",
+        "nonlocal-matchfilter-NOTICE.txt"
+      ]
+    },
+    {
+      "file": "nlmf_mixed640_macos13_coreml_weight.bin",
+      "size": 127057472,
+      "sha256": "e50e91a84be8ca50f58566020eae4dc0bcd165e77c2c999bab418a4c492e3fe9",
+      "used_by": "AI Denoise version 3 (raw Bayer mosaic, Core ML, macOS 13 and later)",
+      "source": "Nonlocal MatchFilter (Sanchez-Beeckman and Buades, github.com/MIA-UIB/nonlocal-matchfilter, release v1.0.0 checkpoint rawnoise_25_15_9nbr), converted by convert_nlmf_coreml.py (Core ML for macOS 13, convolutions fp16, matching fp32, 640 px tiles) with RapidRAW's vendored network and static packed sampler (sheldonxxxx/RapidRAW denoise/, commit 2375e17)",
       "license": "MIT",
       "license_files": [
         "nonlocal-matchfilter-MIT.txt",
