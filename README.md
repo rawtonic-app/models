@@ -14,6 +14,8 @@ of every download.
 A new pack is a new release; earlier releases stay unchanged for the builds
 that point to them. `pack-2026-10-18` holds every file of `pack-2026-10-08`
 (same SHA-256) plus the mixed-precision MatchFilter package.
+The latest, `pack-2026-11-09`, holds every file of `pack-2026-11-07` plus the
+Super Resolution model; `models.json` here lists that pack.
 
 | File | Used for | Source | License |
 |---|---|---|---|
@@ -37,6 +39,7 @@ that point to them. `pack-2026-10-18` holds every file of `pack-2026-10-08`
 | `libonnxruntime-*.so/.dylib`, `onnxruntime-*.dll` | Runtime | Microsoft ONNX Runtime 1.22.0 release archives, unchanged | MIT + third-party notices |
 | `libonnxruntime-1.30.0-*.so`, `onnxruntime-1.30.0-*.dll` | Runtime on Windows and Linux (GPU plugins need ≥ 1.24.4) | Microsoft ONNX Runtime 1.30.0 release archives, unchanged | MIT + third-party notices |
 | `*onnxruntime_providers_webgpu-0.4.0-*` | GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan) | Microsoft's WebGPU plugin execution provider 0.4.0 (PyPI onnxruntime-ep-webgpu), library unchanged; the DirectX Shader Compiler DLLs are not included | MIT (includes Dawn, BSD-3-Clause) |
+| `superres_compact_x2.onnx`, `superres_coreml_*` (Core ML package, three files) | Super Resolution (export option, 2× enlargement; from pack-2026-11-09) | **2xBHI_small_compact_pretrain by Philip Hofmann** (github.com/Phhofm/models, release `2xBHI_small_compact_pretrain`). **Changed:** exported by `scripts/models/export_superres.py` with each tile's four right-angle rotations enlarged, averaged and clamped (ONNX fp32, Core ML fp16); weights unchanged. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `*onnxruntime_providers_cuda-0.2.0-cuda13-*` | NVIDIA GPUs, optional (`install_models.sh --cuda`), with the user's own CUDA 13 and cuDNN 9 | Microsoft's CUDA plugin execution provider 0.2.0, unchanged; CUDA/cuDNN not included | MIT |
 
 License texts are in `licenses/`. Training-data terms of the original models
