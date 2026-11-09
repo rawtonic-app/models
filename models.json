@@ -667,6 +667,228 @@
         "nonlocal-matchfilter-MIT.txt",
         "nonlocal-matchfilter-NOTICE.txt"
       ]
+    },
+    {
+      "file": "moebius_embeddings.bin",
+      "size": 245760,
+      "sha256": "1b46b6251205fd7473f9edb834073848df00fe83e3224ee1f4a2f1bc4bb52c8e",
+      "used_by": "Remove, large holes (Core ML, macOS)",
+      "source": "Moebius ft_places2 (Kangsheng Duan, Ziyang Xu et al., github.com/hustvl/Moebius at b88d462; huggingface.co/hustvl/Moebius, revision cd01f47), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "Apache-2.0 (repository and README; the Hugging Face card says MIT)",
+      "license_files": [
+        "Moebius-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "moebius_unet_fp16_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Remove, large holes (Core ML, macOS)",
+      "source": "Moebius ft_places2 (Kangsheng Duan, Ziyang Xu et al., github.com/hustvl/Moebius at b88d462; huggingface.co/hustvl/Moebius, revision cd01f47), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "Apache-2.0 (repository and README; the Hugging Face card says MIT)",
+      "license_files": [
+        "Moebius-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "moebius_unet_fp16_coreml_model.mlmodel",
+      "size": 1115957,
+      "sha256": "cfa6c064e439ceb7904fb1f396986a5b067219acb2ff2dca52f3bd5ce55640a7",
+      "used_by": "Remove, large holes (Core ML, macOS)",
+      "source": "Moebius ft_places2 (Kangsheng Duan, Ziyang Xu et al., github.com/hustvl/Moebius at b88d462; huggingface.co/hustvl/Moebius, revision cd01f47), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "Apache-2.0 (repository and README; the Hugging Face card says MIT)",
+      "license_files": [
+        "Moebius-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "moebius_unet_fp16_coreml_weight.bin",
+      "size": 451903552,
+      "sha256": "5a70ccf4037c43560f2a81dacd494a9c8fe3937715becf14d4cf7e4d0d28d859",
+      "used_by": "Remove, large holes (Core ML, macOS)",
+      "source": "Moebius ft_places2 (Kangsheng Duan, Ziyang Xu et al., github.com/hustvl/Moebius at b88d462; huggingface.co/hustvl/Moebius, revision cd01f47), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "Apache-2.0 (repository and README; the Hugging Face card says MIT)",
+      "license_files": [
+        "Moebius-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_encoder_fp16_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (Core ML, macOS)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_encoder_fp16_coreml_model.mlmodel",
+      "size": 131252,
+      "sha256": "73532ac0c8eec0fe13fca9d6fb2ed6bdc2a54cecf7d1956070e1a31eef60c5cb",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (Core ML, macOS)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_encoder_fp16_coreml_weight.bin",
+      "size": 68338112,
+      "sha256": "1ab2c204f5b39ec9ad32226638e53be2ad169f1f6b6b438547350128a5125ca5",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (Core ML, macOS)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_decoder_fp16_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (Core ML, macOS)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_decoder_fp16_coreml_model.mlmodel",
+      "size": 170867,
+      "sha256": "17e00d408ff23eab25fbd2d1c081223c87e6b3fde4588d7c94308339dda5aca2",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (Core ML, macOS)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_decoder_fp16_coreml_weight.bin",
+      "size": 98993280,
+      "sha256": "a08df0be795fc242c02d8af66b1f4e0daf8a0b7951a41d55bf88707125763650",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (Core ML, macOS)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py (Core ML, fp16)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "moebius_unet_fp16w.onnx",
+      "size": 453098938,
+      "sha256": "a93b4880344c252a30bf39fcb2f29e6d5a68e8ea3c5a00e1aadeb4d63f18851d",
+      "used_by": "Remove, large holes (ONNX on a GPU, Windows and Linux)",
+      "source": "Moebius ft_places2 (Kangsheng Duan, Ziyang Xu et al., github.com/hustvl/Moebius at b88d462; huggingface.co/hustvl/Moebius, revision cd01f47), converted by scripts/models/convert_moebius_coreml.py --onnx (ONNX, fp16 weights, fp32 compute)",
+      "license": "Apache-2.0 (repository and README; the Hugging Face card says MIT)",
+      "license_files": [
+        "Moebius-Apache-2.0.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_encoder_fp16w.onnx",
+      "size": 68444954,
+      "sha256": "866b0df3037855cb3464dd7aab9a0b8c8f7326df1e93c856adc7dc8517866961",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (ONNX on a GPU, Windows and Linux)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py --onnx (ONNX, fp16 weights, fp32 compute)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "sdxl_vae_decoder_fp16w.onnx",
+      "size": 99106439,
+      "sha256": "307bf01ebd3105b99f0742eae74ecbaaaf5aa6be84d1ddd17318473e83130150",
+      "used_by": "Remove, large holes: Moebius's image encoder and decoder (ONNX on a GPU, Windows and Linux)",
+      "source": "SDXL-VAE-FP16-Fix (huggingface.co/madebyollin/sdxl-vae-fp16-fix, revision 207b116; from Stability AI's SDXL VAE), converted by scripts/models/convert_moebius_coreml.py --onnx (ONNX, fp16 weights, fp32 compute)",
+      "license": "MIT",
+      "license_files": [
+        "sdxl-vae-fp16-fix-MIT.txt"
+      ]
+    },
+    {
+      "file": "libonnxruntime-1.30.0-macos-aarch64.dylib",
+      "size": 43879424,
+      "sha256": "bcc9110f9d638a119de2db7afb3ba9a1da8085f0cb3401e1c48ae1caf450b6fa",
+      "url": "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-osx-arm64-1.30.0.tgz",
+      "used_by": "Runtime for all models on Windows, Linux and Apple silicon Macs (bundled by the opt-in build, RAWTONIC_BUNDLE_ONNX=1)",
+      "source": "ONNX Runtime 1.30.0 release (github.com/microsoft/onnxruntime)",
+      "license": "MIT",
+      "license_files": [
+        "onnxruntime-MIT.txt",
+        "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "siglip2_text_ext.onnx",
+      "size": 226315,
+      "sha256": "8850287083d7a450ec8112162ccc82c0c830432aee4f7814bcc090de65218dba",
+      "used_by": "Content search (text encoder as ONNX external data)",
+      "license": "Apache-2.0",
+      "license_files": [
+        "siglip2-Apache-2.0.txt"
+      ],
+      "source": "SigLIP 2 B/16 (google/siglip2-base-patch16-224, revision 75de2d5), exported by scripts/models/export_siglip2.py; weights saved as external data by scripts/models/external_data.py"
+    },
+    {
+      "file": "siglip2_text_ext.onnx.data",
+      "size": 1129214976,
+      "sha256": "d7721a55cb0242769a6d4b1031ef14c48df21609757a63b856cb00c21e502348",
+      "used_by": "Content search (text encoder as ONNX external data)",
+      "license": "Apache-2.0",
+      "license_files": [
+        "siglip2-Apache-2.0.txt"
+      ],
+      "source": "SigLIP 2 B/16 (google/siglip2-base-patch16-224, revision 75de2d5), exported by scripts/models/export_siglip2.py; weights saved as external data by scripts/models/external_data.py"
+    },
+    {
+      "file": "superres_compact_x2.onnx",
+      "size": 2417527,
+      "sha256": "088990646244e01a74c12460dda5a86547d967299d70b4e58afd4904abecd0d8",
+      "used_by": "Super Resolution (export option, 2x enlargement)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py with each tile's four right-angle rotations averaged and clamped (ONNX fp32; Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
+    },
+    {
+      "file": "superres_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Super Resolution (export option, 2x enlargement)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py with each tile's four right-angle rotations averaged and clamped (ONNX fp32; Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
+    },
+    {
+      "file": "superres_coreml_model.mlmodel",
+      "size": 38283,
+      "sha256": "59668d6013f38bcd11e721b80379f2cb5d0e896b754095f08433d469988cb132",
+      "used_by": "Super Resolution (export option, 2x enlargement)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py with each tile's four right-angle rotations averaged and clamped (ONNX fp32; Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
+    },
+    {
+      "file": "superres_coreml_weight.bin",
+      "size": 1204760,
+      "sha256": "1df839340b0df1bb953ec97b0e084008c3d44557483d6009fed732d635b3a5fe",
+      "used_by": "Super Resolution (export option, 2x enlargement)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py with each tile's four right-angle rotations averaged and clamped (ONNX fp32; Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
     }
   ]
 }
