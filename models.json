@@ -889,6 +889,17 @@
       "license_files": [
         "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
       ]
+    },
+    {
+      "file": "superres_compact_x2_cpu.onnx",
+      "size": 2439192,
+      "sha256": "40bf5c362bad13ca57c1e4493f66f9ab5f2ce7f57156e1d20a77aad7322cd7a1",
+      "used_by": "Super Resolution (export option, 2x enlargement)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py with each tile's four right-angle rotations averaged and clamped (ONNX fp32; Core ML fp16); CPU conversion runs the rotations sequentially (same weights and average)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
     }
   ]
 }
