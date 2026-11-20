@@ -14,8 +14,10 @@ of every download.
 A new pack is a new release; earlier releases stay unchanged for the builds
 that point to them. `pack-2026-10-18` holds every file of `pack-2026-10-08`
 (same SHA-256) plus the mixed-precision MatchFilter package.
-The latest, `pack-2026-11-19`, holds every file of `pack-2026-11-12` unchanged
-plus Rawtonic's own ONNX Runtime 1.30.0 builds without telemetry; `models.json` here lists that pack.
+`pack-2026-11-19` holds every file of `pack-2026-11-12` unchanged
+plus Rawtonic's own ONNX Runtime 1.30.0 builds without telemetry.
+The latest, `pack-2026-11-20`, holds every file of `pack-2026-11-19` unchanged
+plus the fp16 Super Resolution graph for GPU providers; `models.json` here lists that pack.
 
 | File | Used for | Source | License |
 |---|---|---|---|
@@ -38,9 +40,10 @@ plus Rawtonic's own ONNX Runtime 1.30.0 builds without telemetry; `models.json` 
 | `face_mesh_v2.onnx`, `selfie_multiclass_256.onnx` | People masks (landmarks; skin, hair, clothes) | MediaPipe Face Mesh V2 and multiclass selfie segmentation (Google, version 1), converted to ONNX by `scripts/models/export_faces.py` | Apache-2.0 |
 | `libonnxruntime-*.so/.dylib`, `onnxruntime-*.dll` | Runtime | Microsoft ONNX Runtime 1.22.0 release archives, unchanged | MIT + third-party notices |
 | `libonnxruntime-1.30.0-*.so`, `onnxruntime-1.30.0-*.dll` | Runtime on Windows and Linux (GPU plugins need ≥ 1.24.4) | Microsoft ONNX Runtime 1.30.0 release archives, unchanged | MIT + third-party notices |
-| `libonnxruntime-1.30.0-notelemetry-*.so/.dylib`, `onnxruntime-1.30.0-notelemetry-*.dll` | Candidate runtime on Apple silicon Macs, Linux x86_64/aarch64 and Windows x64 (from pack-2026-11-19; no Rawtonic build bundles them yet) | ONNX Runtime 1.30.0 (commit f2c39fe), **built by Rawtonic without telemetry** (`scripts/models/build_onnxruntime.sh`, `build_onnxruntime.ps1` on Windows) | MIT + third-party notices |
+| `libonnxruntime-1.30.0-notelemetry-*.so/.dylib`, `onnxruntime-1.30.0-notelemetry-*.dll` | Runtime on Apple silicon Macs, Linux x86_64/aarch64 and Windows x64, bundled by Rawtonic's opt-in build (from pack-2026-11-19) | ONNX Runtime 1.30.0 (commit f2c39fe), **built by Rawtonic without telemetry** (`scripts/models/build_onnxruntime.sh`, `build_onnxruntime.ps1` on Windows) | MIT + third-party notices |
 | `*onnxruntime_providers_webgpu-0.4.0-*` | GPU for the AI models on Windows (Direct3D 12) and Linux (Vulkan) | Microsoft's WebGPU plugin execution provider 0.4.0 (PyPI onnxruntime-ep-webgpu), library unchanged; the DirectX Shader Compiler DLLs are not included | MIT (includes Dawn, BSD-3-Clause) |
 | `superres_compact_x2.onnx`, `superres_coreml_*` (Core ML package, three files) | Super Resolution (export option, 2× enlargement; from pack-2026-11-09) | **2xBHI_small_compact_pretrain by Philip Hofmann** (github.com/Phhofm/models, release `2xBHI_small_compact_pretrain`). **Changed:** exported by `scripts/models/export_superres.py` with each tile's four right-angle rotations enlarged, averaged and clamped (ONNX fp32, Core ML fp16); weights unchanged. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
+| `superres_compact_x2_fp16.onnx` | Super Resolution on a GPU provider (CUDA, WebGPU; from pack-2026-11-20) | Same Philip Hofmann weights and four-rotation average as above. **Changed conversion:** `scripts/models/convert_superres_fp16.py` converts `superres_compact_x2.onnx` to fp16 weights and fp16 computation with fp32 input and output. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `superres_compact_x2_cpu.onnx` | Super Resolution on CPU (from pack-2026-11-12) | Same Philip Hofmann weights and four-rotation average as above. **Changed conversion:** `export_superres.py --cpu-only` runs each rotation separately (batch size one), fp32; clamped to 0..1. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `*onnxruntime_providers_cuda-0.2.0-cuda13-*` | NVIDIA GPUs, optional (`install_models.sh --cuda`), with the user's own CUDA 13 and cuDNN 9 | Microsoft's CUDA plugin execution provider 0.2.0, unchanged; CUDA/cuDNN not included | MIT |
 

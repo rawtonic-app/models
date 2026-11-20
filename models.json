@@ -905,7 +905,7 @@
       "file": "libonnxruntime-1.30.0-notelemetry-macos-aarch64.dylib",
       "size": 30018536,
       "sha256": "49a8b6906c0e09c26e078bec8b53b1cfcb2be366e70cfa58b95bf812f9c57cde",
-      "used_by": "Candidate runtime for all models on Apple silicon Macs; the app does not bundle it yet (src-tauri/build.rs still pins Microsoft's library)",
+      "used_by": "Runtime for all models on Apple silicon Macs, bundled by the opt-in build (RAWTONIC_BUNDLE_ONNX=1) since 2026-11-19",
       "source": "ONNX Runtime 1.30.0 (commit f2c39fe2f838cf35ce7da92824f5a5e3ee6e88a7), built by Rawtonic without telemetry (scripts/models/build_onnxruntime.sh, build_onnxruntime.ps1 on Windows)",
       "license": "MIT",
       "license_files": [
@@ -917,7 +917,7 @@
       "file": "libonnxruntime-1.30.0-notelemetry-linux-x86_64.so",
       "size": 24187152,
       "sha256": "620d32796c8ff40f23431e37bf417107635bf3f3d40398c5ffbbf370de3f1ad4",
-      "used_by": "Candidate runtime for all models on Linux x86_64; the app does not bundle it yet (src-tauri/build.rs still pins Microsoft's library)",
+      "used_by": "Runtime for all models on Linux x86_64, bundled by the opt-in build (RAWTONIC_BUNDLE_ONNX=1) since 2026-11-19",
       "source": "ONNX Runtime 1.30.0 (commit f2c39fe2f838cf35ce7da92824f5a5e3ee6e88a7), built by Rawtonic without telemetry (scripts/models/build_onnxruntime.sh, build_onnxruntime.ps1 on Windows)",
       "license": "MIT",
       "license_files": [
@@ -929,7 +929,7 @@
       "file": "libonnxruntime-1.30.0-notelemetry-linux-aarch64.so",
       "size": 20533944,
       "sha256": "870f287be9adac99845de22fdd1f1996f8ca10f048396a5a64b74666a2268199",
-      "used_by": "Candidate runtime for all models on Linux aarch64; the app does not bundle it yet (src-tauri/build.rs still pins Microsoft's library)",
+      "used_by": "Runtime for all models on Linux aarch64, bundled by the opt-in build (RAWTONIC_BUNDLE_ONNX=1) since 2026-11-19",
       "source": "ONNX Runtime 1.30.0 (commit f2c39fe2f838cf35ce7da92824f5a5e3ee6e88a7), built by Rawtonic without telemetry (scripts/models/build_onnxruntime.sh, build_onnxruntime.ps1 on Windows)",
       "license": "MIT",
       "license_files": [
@@ -941,12 +941,23 @@
       "file": "onnxruntime-1.30.0-notelemetry-windows-x86_64.dll",
       "size": 15706112,
       "sha256": "72c305db97f93d1ce6c4d0bcd5cc312d9f3a6044efdb74c7ffd871553d0e3434",
-      "used_by": "Candidate runtime for all models on Windows x64; the app does not bundle it yet (src-tauri/build.rs still pins Microsoft's library)",
+      "used_by": "Runtime for all models on Windows x64, bundled by the opt-in build (RAWTONIC_BUNDLE_ONNX=1) since 2026-11-19",
       "source": "ONNX Runtime 1.30.0 (commit f2c39fe2f838cf35ce7da92824f5a5e3ee6e88a7), built by Rawtonic without telemetry (scripts/models/build_onnxruntime.sh, build_onnxruntime.ps1 on Windows)",
       "license": "MIT",
       "license_files": [
         "onnxruntime-MIT.txt",
         "onnxruntime-1.30.0-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "file": "superres_compact_x2_fp16.onnx",
+      "size": 1222551,
+      "sha256": "4ee4e846aebe963d9739cca170df56b6b13f0fb6f604483d284ac227d250289d",
+      "used_by": "Super Resolution (export option, 2x enlargement) on a GPU provider (CUDA, WebGPU)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py with each tile's four right-angle rotations averaged and clamped (ONNX fp32; Core ML fp16); GPU conversion by scripts/models/convert_superres_fp16.py: weights rounded to fp16 and fp16 compute, fp32 input and output",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
       ]
     }
   ]
