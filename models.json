@@ -959,6 +959,17 @@
       "license_files": [
         "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
       ]
+    },
+    {
+      "file": "landscape_upernet_convnext_t.onnx",
+      "size": 118859577,
+      "sha256": "36faaefebdaacc743fa89a592b2a0ebcc35c561661a56ecf8566ab0d90f21451",
+      "used_by": "Landscape mask",
+      "source": "UperNet + ConvNeXt-T on ADE20K (Meta, facebookresearch/ConvNeXt; transformers conversion openmmlab/upernet-convnext-tiny, revision 876ffc5), exported by scripts/models/export_landscape.py (seven part probabilities summed from the 150-class softmax: changed head)",
+      "license": "MIT",
+      "license_files": [
+        "ConvNeXt-MIT.txt"
+      ]
     }
   ]
 }
