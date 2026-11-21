@@ -18,8 +18,10 @@ that point to them. `pack-2026-10-18` holds every file of `pack-2026-10-08`
 plus Rawtonic's own ONNX Runtime 1.30.0 builds without telemetry.
 `pack-2026-11-20` holds every file of `pack-2026-11-19` unchanged
 plus the fp16 Super Resolution graph for GPU providers.
-The latest, `pack-2026-11-21`, holds every file of `pack-2026-11-20` unchanged
-plus the landscape-parts model; `models.json` here lists that pack.
+`pack-2026-11-21` holds every file of `pack-2026-11-20` unchanged
+plus the landscape-parts model.
+The latest, `pack-2026-11-21b`, holds every file of `pack-2026-11-21` unchanged
+plus the face retouch's eye and teeth parser; `models.json` here lists that pack.
 
 | File | Used for | Source | License |
 |---|---|---|---|
@@ -38,6 +40,7 @@ plus the landscape-parts model; `models.json` here lists that pack.
 | `migan_pipeline_v2.onnx` | Object removal | MI-GAN 512 Places2 (Picsart AI Research), its first author's ONNX pipeline (revision 406830d), unchanged | MIT (weights) |
 | `skyseg_upernet_convnext_t.onnx` | Sky mask | UperNet + ConvNeXt-T on ADE20K (Meta's checkpoint via `openmmlab/upernet-convnext-tiny`, revision 876ffc5), exported by `scripts/models/export_sky.py`, fp16 storage | MIT |
 | `landscape_upernet_convnext_t.onnx` | Landscape mask (mountains, water, vegetation, natural and artificial ground, architecture, sky; from pack-2026-11-21) | The Sky model's UperNet + ConvNeXt-T ADE20K checkpoint (Meta, facebookresearch/ConvNeXt; transformers conversion `openmmlab/upernet-convnext-tiny`, revision 876ffc5). **Changed head:** exported by `scripts/models/export_landscape.py` with seven part probabilities, each the 150-class softmax summed over the part's ADE20K classes, fp16 storage. The authors do not endorse Rawtonic | MIT (`licenses/ConvNeXt-MIT.txt`) |
+| `easyportrait_fpn_1024.onnx`, `easyportrait_coreml_*` (Core ML package, three files) | Face retouch Eyes and Teeth (from pack-2026-11-21b) | EasyPortrait FPN + ResNet-50 face parsing checkpoint `fpn-fp-1024.pth` (SberDevices: A. Kapitanov, K. Kvanchiani, E. Petrova, K. Efremyan, A. Sautin; github.com/hukenovs/easyportrait at 1b3d3e5). **Changed:** re-implemented in plain PyTorch, optimizer state removed, normalisation, mirror pass and eye-class merge in the graph, converted by `scripts/models/export_easyportrait.py` (ONNX, fp16 storage) and `convert_easyportrait_coreml.py` (Core ML, fp16). The authors do not endorse Rawtonic | CC BY-SA 4.0 for these converted files (`licenses/easyportrait-CC-BY-SA-4.0.txt`); original weights under the authors' variant of CC BY-SA 4.0 (`licenses/easyportrait-LICENSE.txt`) |
 | `skyseg_coreml_*` (Core ML package, three files) | Sky mask on macOS | UperNet + ConvNeXt-T (revision 876ffc5), converted by `scripts/models/convert_sky_coreml.py`, fp32 | MIT |
 | `face_detection_yunet_2023mar.onnx` | People masks (faces) | YuNet 2023mar (Shiqi Yu et al.), OpenCV Zoo at f12e127, unchanged | MIT |
 | `face_mesh_v2.onnx`, `selfie_multiclass_256.onnx` | People masks (landmarks; skin, hair, clothes) | MediaPipe Face Mesh V2 and multiclass selfie segmentation (Google, version 1), converted to ONNX by `scripts/models/export_faces.py` | Apache-2.0 |

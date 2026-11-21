@@ -970,6 +970,58 @@
       "license_files": [
         "ConvNeXt-MIT.txt"
       ]
+    },
+    {
+      "file": "easyportrait_fpn_1024.onnx",
+      "size": 57029872,
+      "sha256": "4ddf76e62492273fa25d731722e71413f20038546be51e9ab03d3419d954219c",
+      "used_by": "Face retouch Eyes and Teeth (eye openings and teeth)",
+      "source": "EasyPortrait FPN + ResNet-50 face parsing fpn-fp-1024.pth (SberDevices: Kapitanov, Kvanchiani, Petrova, Efremyan, Sautin; github.com/hukenovs/easyportrait at 1b3d3e5, SHA-256 3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40), changed: re-implemented in plain PyTorch, optimizer state removed, normalisation, mirror pass and eye-class merge in the graph, converted by scripts/models/export_easyportrait.py (ONNX, fp16 storage) and convert_easyportrait_coreml.py (Core ML, fp16)",
+      "license": "CC BY-SA 4.0 (converted files; original: the authors' variant of CC BY-SA 4.0)",
+      "license_files": [
+        "easyportrait-LICENSE.txt",
+        "easyportrait-CC-BY-SA-4.0.txt"
+      ],
+      "checkpoint_sha256": "3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40"
+    },
+    {
+      "file": "easyportrait_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Face retouch Eyes and Teeth (eye openings and teeth)",
+      "source": "EasyPortrait FPN + ResNet-50 face parsing fpn-fp-1024.pth (SberDevices: Kapitanov, Kvanchiani, Petrova, Efremyan, Sautin; github.com/hukenovs/easyportrait at 1b3d3e5, SHA-256 3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40), changed: re-implemented in plain PyTorch, optimizer state removed, normalisation, mirror pass and eye-class merge in the graph, converted by scripts/models/export_easyportrait.py (ONNX, fp16 storage) and convert_easyportrait_coreml.py (Core ML, fp16)",
+      "license": "CC BY-SA 4.0 (converted files; original: the authors' variant of CC BY-SA 4.0)",
+      "license_files": [
+        "easyportrait-LICENSE.txt",
+        "easyportrait-CC-BY-SA-4.0.txt"
+      ],
+      "checkpoint_sha256": "3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40"
+    },
+    {
+      "file": "easyportrait_coreml_model.mlmodel",
+      "size": 118567,
+      "sha256": "bee5760ef6a038aa02193b93671484add681ab65cb4680cd5bc59655ddc2fd26",
+      "used_by": "Face retouch Eyes and Teeth (eye openings and teeth)",
+      "source": "EasyPortrait FPN + ResNet-50 face parsing fpn-fp-1024.pth (SberDevices: Kapitanov, Kvanchiani, Petrova, Efremyan, Sautin; github.com/hukenovs/easyportrait at 1b3d3e5, SHA-256 3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40), changed: re-implemented in plain PyTorch, optimizer state removed, normalisation, mirror pass and eye-class merge in the graph, converted by scripts/models/export_easyportrait.py (ONNX, fp16 storage) and convert_easyportrait_coreml.py (Core ML, fp16)",
+      "license": "CC BY-SA 4.0 (converted files; original: the authors' variant of CC BY-SA 4.0)",
+      "license_files": [
+        "easyportrait-LICENSE.txt",
+        "easyportrait-CC-BY-SA-4.0.txt"
+      ],
+      "checkpoint_sha256": "3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40"
+    },
+    {
+      "file": "easyportrait_coreml_weight.bin",
+      "size": 56947008,
+      "sha256": "d0d2e88f41652514494c0fd273666b26add3bc91e72ddf26187ff071e11427b9",
+      "used_by": "Face retouch Eyes and Teeth (eye openings and teeth)",
+      "source": "EasyPortrait FPN + ResNet-50 face parsing fpn-fp-1024.pth (SberDevices: Kapitanov, Kvanchiani, Petrova, Efremyan, Sautin; github.com/hukenovs/easyportrait at 1b3d3e5, SHA-256 3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40), changed: re-implemented in plain PyTorch, optimizer state removed, normalisation, mirror pass and eye-class merge in the graph, converted by scripts/models/export_easyportrait.py (ONNX, fp16 storage) and convert_easyportrait_coreml.py (Core ML, fp16)",
+      "license": "CC BY-SA 4.0 (converted files; original: the authors' variant of CC BY-SA 4.0)",
+      "license_files": [
+        "easyportrait-LICENSE.txt",
+        "easyportrait-CC-BY-SA-4.0.txt"
+      ],
+      "checkpoint_sha256": "3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40"
     }
   ]
 }
