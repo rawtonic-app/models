@@ -24,8 +24,10 @@ plus the landscape-parts model.
 plus the face retouch's eye and teeth parser.
 `pack-2026-11-25` holds every file of `pack-2026-11-21b` unchanged
 plus Super Resolution's single-pass CPU graph.
-The latest, `pack-2026-11-25b`, holds every file of `pack-2026-11-25` unchanged
-plus AI Denoise's Fast network; `models.json` here lists that pack.
+`pack-2026-11-25b` holds every file of `pack-2026-11-25` unchanged
+plus AI Denoise's Fast network.
+The latest, `pack-2026-11-25c`, holds every file of `pack-2026-11-25b` unchanged
+plus the Core ML program of Super Resolution's Fast quality; `models.json` here lists that pack.
 
 | File | Used for | Source | License |
 |---|---|---|---|
@@ -55,7 +57,8 @@ plus AI Denoise's Fast network; `models.json` here lists that pack.
 | `superres_compact_x2.onnx`, `superres_coreml_*` (Core ML package, three files) | Super Resolution (export option, 2× enlargement; from pack-2026-11-09) | **2xBHI_small_compact_pretrain by Philip Hofmann** (github.com/Phhofm/models, release `2xBHI_small_compact_pretrain`). **Changed:** exported by `scripts/models/export_superres.py` with each tile's four right-angle rotations enlarged, averaged and clamped (ONNX fp32, Core ML fp16); weights unchanged. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `superres_compact_x2_fp16.onnx` | Super Resolution on a GPU provider (CUDA, WebGPU; from pack-2026-11-20) | Same Philip Hofmann weights and four-rotation average as above. **Changed conversion:** `scripts/models/convert_superres_fp16.py` converts `superres_compact_x2.onnx` to fp16 weights and fp16 computation with fp32 input and output. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `superres_compact_x2_cpu.onnx` | Super Resolution on CPU (from pack-2026-11-12) | Same Philip Hofmann weights and four-rotation average as above. **Changed conversion:** `export_superres.py --cpu-only` runs each rotation separately (batch size one), fp32; clamped to 0..1. The author does not endorse Rawtonic | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
-| `superres_compact_x2_cpu_single.onnx` | Super Resolution on CPU for recipes from renderVersion 20 (from pack-2026-11-25) | Same Philip Hofmann weights as above. **Changed conversion:** `export_superres.py --cpu-single`, each tile enlarged once without the rotation average, clamped, ONNX fp32 | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
+| `superres_compact_x2_cpu_single.onnx` | Super Resolution, Fast quality, on ONNX Runtime (from pack-2026-11-25; its manifest entry there still names the first, CPU-only use) | Same Philip Hofmann weights as above. **Changed conversion:** `export_superres.py --single`, each tile enlarged once without the rotation average, clamped, ONNX fp32 | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
+| `superres_single_coreml_*` (Core ML package, three files) | Super Resolution, Fast quality, on macOS (from pack-2026-11-25c) | Same Philip Hofmann weights as above. **Changed conversion:** `export_superres.py --single`, each tile enlarged once without the rotation average, clamped, Core ML ML program fp16 | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `fast_denoise_v1.onnx` | AI Denoise, Fast quality (recipes with `aiDenoiseQuality: "fast"`; from pack-2026-11-25b) | **Rawtonic's own network** (U-Net, 9.6 M parameters, `scripts/models/fast_denoise_net.py`), trained by Rawtonic by distillation from Nonlocal MatchFilter (Sánchez-Beeckman and Buades, MIT) on 110 noisy Bayer frames of RawNIND (B. Brummer and C. De Vleeschouwer, UCLouvain, doi:10.14428/DVN/DEQCIM, CC BY-SA 4.0). **Changed:** trained weights converted to ONNX (opset 17, fp32). Neither the dataset's nor MatchFilter's authors endorse Rawtonic | CC BY-SA 4.0 (`licenses/fast-denoise-CC-BY-SA-4.0.txt`) |
 | `*onnxruntime_providers_cuda-0.2.0-cuda13-*` | NVIDIA GPUs, optional (`install_models.sh --cuda`), with the user's own CUDA 13 and cuDNN 9 | Microsoft's CUDA plugin execution provider 0.2.0, unchanged; CUDA/cuDNN not included | MIT |
 
