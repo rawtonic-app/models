@@ -1078,6 +1078,17 @@
       "license_files": [
         "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
       ]
+    },
+    {
+      "file": "xtrans_denoise_v1.onnx",
+      "size": 38464552,
+      "sha256": "de33162b2fc6ac8217e3f9a7becf9d6831fed6a269a4614613300f0bd4c32e2d",
+      "used_by": "AI Denoise on X-Trans sensors (ONNX Runtime, every platform)",
+      "source": "Rawtonic's own network (scripts/models/xtrans_denoise_net.py, size L, 9.6 M parameters) trained by Rawtonic with supervision on the X-Trans frames of 96 scenes of RawNIND (Brummer and De Vleeschouwer, UCLouvain, doi:10.14428/DVN/DEQCIM, CC BY-SA 4.0): noisy frames as inputs, the scenes' clean frames as targets; exported to ONNX (opset 17, fp32, 1008 px tiles, EMA weights)",
+      "license": "CC BY-SA 4.0",
+      "license_files": [
+        "xtrans-denoise-CC-BY-SA-4.0.txt"
+      ]
     }
   ]
 }
