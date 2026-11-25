@@ -1045,6 +1045,39 @@
         "fast-denoise-CC-BY-SA-4.0.txt",
         "nonlocal-matchfilter-MIT.txt"
       ]
+    },
+    {
+      "file": "superres_single_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Super Resolution (export option, 2x enlargement), Fast quality (Core ML, macOS)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py --single: each tile enlarged once (no rotation average) and clamped (Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
+    },
+    {
+      "file": "superres_single_coreml_model.mlmodel",
+      "size": 31861,
+      "sha256": "181860c6811ef1539244bf964b8570c8ff85ca377e39bf7f993ebcba5d461db3",
+      "used_by": "Super Resolution (export option, 2x enlargement), Fast quality (Core ML, macOS)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py --single: each tile enlarged once (no rotation average) and clamped (Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
+    },
+    {
+      "file": "superres_single_coreml_weight.bin",
+      "size": 1204760,
+      "sha256": "1df839340b0df1bb953ec97b0e084008c3d44557483d6009fed732d635b3a5fe",
+      "used_by": "Super Resolution (export option, 2x enlargement), Fast quality (Core ML, macOS)",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py --single: each tile enlarged once (no rotation average) and clamped (Core ML fp16)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
     }
   ]
 }
