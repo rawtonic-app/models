@@ -1033,6 +1033,18 @@
       "license_files": [
         "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
       ]
+    },
+    {
+      "file": "fast_denoise_v1.onnx",
+      "size": 38332952,
+      "sha256": "95e4e3f168d98f030b25f4f0c7d44337cc168d80d63af48227357d6f616914a6",
+      "used_by": "AI Denoise, Fast quality (ONNX Runtime, every platform)",
+      "source": "Rawtonic's own network (scripts/models/fast_denoise_net.py, size L, 9.6 M parameters) trained by Rawtonic by distillation from Nonlocal MatchFilter (Sanchez-Beeckman and Buades, MIT) on 110 noisy Bayer frames of RawNIND (Brummer and De Vleeschouwer, UCLouvain, doi:10.14428/DVN/DEQCIM, CC BY-SA 4.0); exported to ONNX (opset 17, fp32, 512 px tiles)",
+      "license": "CC BY-SA 4.0",
+      "license_files": [
+        "fast-denoise-CC-BY-SA-4.0.txt",
+        "nonlocal-matchfilter-MIT.txt"
+      ]
     }
   ]
 }
