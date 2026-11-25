@@ -26,8 +26,10 @@ plus the face retouch's eye and teeth parser.
 plus Super Resolution's single-pass CPU graph.
 `pack-2026-11-25b` holds every file of `pack-2026-11-25` unchanged
 plus AI Denoise's Fast network.
-The latest, `pack-2026-11-25c`, holds every file of `pack-2026-11-25b` unchanged
-plus the Core ML program of Super Resolution's Fast quality; `models.json` here lists that pack.
+`pack-2026-11-25c` holds every file of `pack-2026-11-25b` unchanged
+plus the Core ML program of Super Resolution's Fast quality.
+The latest, `pack-2026-11-25d`, holds every file of `pack-2026-11-25c` unchanged
+plus AI Denoise's X-Trans network; `models.json` here lists that pack.
 
 | File | Used for | Source | License |
 |---|---|---|---|
@@ -60,6 +62,7 @@ plus the Core ML program of Super Resolution's Fast quality; `models.json` here 
 | `superres_compact_x2_cpu_single.onnx` | Super Resolution, Fast quality, on ONNX Runtime (from pack-2026-11-25; its manifest entry there still names the first, CPU-only use) | Same Philip Hofmann weights as above. **Changed conversion:** `export_superres.py --single`, each tile enlarged once without the rotation average, clamped, ONNX fp32 | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `superres_single_coreml_*` (Core ML package, three files) | Super Resolution, Fast quality, on macOS (from pack-2026-11-25c) | Same Philip Hofmann weights as above. **Changed conversion:** `export_superres.py --single`, each tile enlarged once without the rotation average, clamped, Core ML ML program fp16 | CC BY 4.0 (`licenses/2xBHI-small-compact-pretrain-CC-BY-4.0.txt`) |
 | `fast_denoise_v1.onnx` | AI Denoise, Fast quality (recipes with `aiDenoiseQuality: "fast"`; from pack-2026-11-25b) | **Rawtonic's own network** (U-Net, 9.6 M parameters, `scripts/models/fast_denoise_net.py`), trained by Rawtonic by distillation from Nonlocal MatchFilter (Sánchez-Beeckman and Buades, MIT) on 110 noisy Bayer frames of RawNIND (B. Brummer and C. De Vleeschouwer, UCLouvain, doi:10.14428/DVN/DEQCIM, CC BY-SA 4.0). **Changed:** trained weights converted to ONNX (opset 17, fp32). Neither the dataset's nor MatchFilter's authors endorse Rawtonic | CC BY-SA 4.0 (`licenses/fast-denoise-CC-BY-SA-4.0.txt`) |
+| `xtrans_denoise_v1.onnx` | AI Denoise on X-Trans sensors (recipes with `aiDenoiseVersion` 6 or later; from pack-2026-11-25d) | **Rawtonic's own network** (U-Net on the X-Trans mosaic, 9.6 M parameters, `scripts/models/xtrans_denoise_net.py`), trained by Rawtonic with supervision on the X-Trans frames of 96 scenes of RawNIND (B. Brummer and C. De Vleeschouwer, UCLouvain, doi:10.14428/DVN/DEQCIM, CC BY-SA 4.0): noisy frames as inputs, the scenes' clean frames as targets. **Changed:** trained weights converted to ONNX (opset 17, fp32, 1008-sample tiles). The dataset's authors do not endorse Rawtonic | CC BY-SA 4.0 (`licenses/xtrans-denoise-CC-BY-SA-4.0.txt`) |
 | `*onnxruntime_providers_cuda-0.2.0-cuda13-*` | NVIDIA GPUs, optional (`install_models.sh --cuda`), with the user's own CUDA 13 and cuDNN 9 | Microsoft's CUDA plugin execution provider 0.2.0, unchanged; CUDA/cuDNN not included | MIT |
 
 License texts are in `licenses/`. Training-data terms of the original models
