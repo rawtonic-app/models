@@ -1022,6 +1022,17 @@
         "easyportrait-CC-BY-SA-4.0.txt"
       ],
       "checkpoint_sha256": "3543661ad51e08fe49c2f202fafc39d99d1a1c78e9de033c67b532ee5401ef40"
+    },
+    {
+      "file": "superres_compact_x2_cpu_single.onnx",
+      "size": 2411259,
+      "sha256": "3ad7b2ebfa053e930c5356db5d326b7587b458ae9fab4869f9e0534fbf563c1e",
+      "used_by": "Super Resolution (export option, 2x enlargement) on ONNX Runtime's CPU provider, recipes from renderVersion 20",
+      "source": "2xBHI_small_compact_pretrain (Philip Hofmann, github.com/Phhofm/models release 2xBHI_small_compact_pretrain, .pth SHA-256 17135b91d28e6e11583c96ec6d0d8e05f89a1c7dc0906234ff16a43d633f9ddc), changed: exported by scripts/models/export_superres.py --cpu-single: each tile enlarged once (no rotation average) and clamped (ONNX fp32)",
+      "license": "CC BY 4.0",
+      "license_files": [
+        "2xBHI-small-compact-pretrain-CC-BY-4.0.txt"
+      ]
     }
   ]
 }
