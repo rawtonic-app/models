@@ -1089,6 +1089,42 @@
       "license_files": [
         "xtrans-denoise-CC-BY-SA-4.0.txt"
       ]
+    },
+    {
+      "file": "sam2_tiny_encoder_coreml_Manifest.json",
+      "size": 617,
+      "sha256": "935b1ef0c97fe51b4999919c28b9c91151c648c72571c1d5c3c49dd6e9b3b184",
+      "used_by": "Click and box masks (image encoder, Core ML, macOS)",
+      "source": "SAM 2.1 Hiera-T checkpoint sam2.1_hiera_tiny.pt (Meta, github.com/facebookresearch/sam2 at 2b90b9f), exported by scripts/models/convert_sam2_coreml.py (Core ML, fp32 compute; position embedding kept as a constant: changed graph)",
+      "license": "Apache-2.0",
+      "license_files": [
+        "sam2-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+    },
+    {
+      "file": "sam2_tiny_encoder_coreml_model.mlmodel",
+      "size": 156283,
+      "sha256": "b162a38bf7f49516a7b2ad61d05040d01299f039f7e9e88efc6b79ac02b067ac",
+      "used_by": "Click and box masks (image encoder, Core ML, macOS)",
+      "source": "SAM 2.1 Hiera-T checkpoint sam2.1_hiera_tiny.pt (Meta, github.com/facebookresearch/sam2 at 2b90b9f), exported by scripts/models/convert_sam2_coreml.py (Core ML, fp32 compute; position embedding kept as a constant: changed graph)",
+      "license": "Apache-2.0",
+      "license_files": [
+        "sam2-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+    },
+    {
+      "file": "sam2_tiny_encoder_coreml_weight.bin",
+      "size": 134109376,
+      "sha256": "c57153f55bd4cfabbd31de6807025c996222e9cb1c575b6fec160f43e17adfa0",
+      "used_by": "Click and box masks (image encoder, Core ML, macOS)",
+      "source": "SAM 2.1 Hiera-T checkpoint sam2.1_hiera_tiny.pt (Meta, github.com/facebookresearch/sam2 at 2b90b9f), exported by scripts/models/convert_sam2_coreml.py (Core ML, fp32 compute; position embedding kept as a constant: changed graph)",
+      "license": "Apache-2.0",
+      "license_files": [
+        "sam2-Apache-2.0.txt"
+      ],
+      "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
     }
   ]
 }
